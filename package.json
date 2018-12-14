@@ -1,0 +1,20 @@
+{
+  "name": "common-utils-zdluoa",
+  "version": "1.0.1",
+  "description": "公共的工具类",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuoZhiDan/common-utils-zdluoa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuoZhiDan/common-utils-zdluoa/issues"
+  },
+  "homepage": "https://github.com/LuoZhiDan/common-utils-zdluoa#readme"
+}
