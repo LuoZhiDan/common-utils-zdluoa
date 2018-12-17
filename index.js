@@ -6,7 +6,7 @@ import { SVGPath } from './src/libs/SVGPath';
  * @param {*} na 
  * @param {*} b 
  */
-export function copyTo(na, b) {
+function copy( na, b ){
     for(let p in b){
         if(isObject(na[p]) && isObject(b[p])) {
             na[p] = copyTo(na[p], b[p]);
@@ -15,6 +15,19 @@ export function copyTo(na, b) {
         }
     }
     return na;
+}
+
+/**
+ * 多个对象copy一个
+ * @param  {...any} args 
+ */
+export function copies(...args) {
+    let item = args.pop();
+    let it;
+    while((it = args.pop())){
+        item = copy(it, item);
+    }
+    return item;
 }
 
 export function isObject( o ){
