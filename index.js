@@ -1,3 +1,5 @@
+import { SVGPath } from './src/libs/SVGPath';
+
 
 /**
  * 深度copy一个对象给领一个对象
@@ -15,6 +17,14 @@ export function copyTo(na, b) {
     return na;
 }
 
-function isObject( o ){
+export function isObject( o ){
     return o && (Object.prototype.toString.call( o ) === '[object Object]');
+}
+
+/**
+ * 
+ * @param {*} path 
+ */
+export function svgPath( path ){
+    return SVGPath( path );
 }

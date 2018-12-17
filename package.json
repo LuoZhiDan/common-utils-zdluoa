@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/LuoZhiDan/common-utils-zdluoa/issues"
   },
-  "homepage": "https://github.com/LuoZhiDan/common-utils-zdluoa#readme"
+  "homepage": "https://github.com/LuoZhiDan/common-utils-zdluoa#readme",
+  "dependencies": {
+    "three": "^0.99.0"
+  }
 }
