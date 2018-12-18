@@ -1,5 +1,6 @@
 import { SVGPath } from './libs/SVGPath';
-import { GEOjson } from './libs/GEOjson';
+
+import { getGeo } from 'geo-utils-zdluoa';
 
 
 /**
@@ -42,11 +43,10 @@ export function svgPath( path ){
     return SVGPath( path );
 }
 
-
 /**
- * 获取Geojson
+ * 根据名称获取地区geojson数据
  * @param {*} name 
  */
-export function geojson( name ){
-    return GEOjson( name );
+export function getGeojson( name ){
+    return getGeo( name )
 }
