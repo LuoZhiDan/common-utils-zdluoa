@@ -1,8 +1,5 @@
 import { SVGPath } from './libs/SVGPath';
 
-import { getGeo } from 'geo-utils-zdluoa';
-
-
 /**
  * 深度copy一个对象给领一个对象
  * @param {*} na 
@@ -41,12 +38,4 @@ export function isObject( o ){
  */
 export function svgPath( path ){
     return SVGPath( path );
-}
-
-/**
- * 根据名称获取地区geojson数据
- * @param {*} name 
- */
-export function getGeojson( name ){
-    return getGeo( name )
 }
