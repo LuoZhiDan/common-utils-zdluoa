@@ -1,4 +1,5 @@
-import { SVGPath } from './src/libs/SVGPath';
+import { SVGPath } from './libs/SVGPath';
+import { geo } from './libs/geojson';
 
 
 /**
@@ -35,9 +36,17 @@ export function isObject( o ){
 }
 
 /**
- * 
  * @param {*} path 
  */
 export function svgPath( path ){
     return SVGPath( path );
+}
+
+
+/**
+ * 获取Geojson
+ * @param {*} name 
+ */
+export function geojson( name ){
+    return geo( name );
 }
