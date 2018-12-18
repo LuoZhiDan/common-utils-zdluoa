@@ -1,5 +1,5 @@
 import { SVGPath } from './libs/SVGPath';
-import { geo } from './libs/geojson';
+import { GEOjson } from './libs/GEOjson';
 
 
 /**
@@ -48,5 +48,5 @@ export function svgPath( path ){
  * @param {*} name 
  */
 export function geojson( name ){
-    return geo( name );
+    return GEOjson( name );
 }
