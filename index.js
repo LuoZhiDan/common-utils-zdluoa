@@ -8,7 +8,7 @@ import { SVGPath } from './libs/SVGPath';
 function copy( na, b ){
     for(let p in b){
         if(isObject(na[p]) && isObject(b[p])) {
-            na[p] = copyTo(na[p], b[p]);
+            na[p] = copy(na[p], b[p]);
         } else {
             na[p] = b[p];
         }
